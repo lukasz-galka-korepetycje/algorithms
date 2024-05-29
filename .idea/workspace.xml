@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54d7c851-6a17-4fcd-96ee-e5f74b9d68a2" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/algorithms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datasets/anomaly_detection/cover.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/g_measure_examples.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance_measures/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance_measures/g_measure/G_Measure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance_measures/g_measure/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/IntuitionisticFuzzySet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/g-measure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-    </list>
+    <list default="true" id="54d7c851-6a17-4fcd-96ee-e5f74b9d68a2" name="Changes" comment="G Measure - implementation with examples" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712325240648</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="G Measure - implementation with examples">
+      <option name="closed" value="true" />
+      <created>1716991518170</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716991518170</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="G Measure - implementation with examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="G Measure - implementation with examples" />
   </component>
 </project>
