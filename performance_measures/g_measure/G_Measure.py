@@ -137,13 +137,11 @@ class G_Measure:
             raise ValueError(f"y_score or y_pred must be not None.")
 
         self.other_kernels = {}
+        self.intersection_kernels = {}
         for unique_class in self.unique_classes:
             other_kernels = [kernel for other_class_index, kernel in self.kernels.items() if
                              other_class_index != unique_class]
             self.other_kernels[unique_class] = np.max(other_kernels, axis=0)
-
-        self.intersection_kernels = {}
-        for unique_class in self.unique_classes:
             self.intersection_kernels[unique_class] = np.minimum(self.kernels[unique_class],
                                                                  self.other_kernels[unique_class])
 
@@ -166,6 +164,7 @@ class G_Measure:
             self.thresholds.append((current_class, self.x_space[i]))
 
         self.intersection_current_dominant_kernels = {}
+        self.intersection_current_non_dominant_kernels = {}
         for unique_class in self.unique_classes:
             self.intersection_current_dominant_kernels[unique_class] = np.zeros_like(
                 self.intersection_kernels[unique_class])
@@ -173,13 +172,11 @@ class G_Measure:
             self.intersection_current_dominant_kernels[unique_class][dominant_mask] = \
             self.intersection_kernels[unique_class][dominant_mask]
 
-        self.intersection_current_non_dominant_kernels = {}
-        for unique_class in self.unique_classes:
             self.intersection_current_non_dominant_kernels[unique_class] = np.zeros_like(
                 self.intersection_kernels[unique_class])
             non_dominant_mask = [dominant_class != unique_class for dominant_class in dominant_classes]
             self.intersection_current_non_dominant_kernels[unique_class][non_dominant_mask] = \
-            self.intersection_kernels[unique_class][non_dominant_mask]
+                self.intersection_kernels[unique_class][non_dominant_mask]
 
         self.class_measure = {}
         for unique_class in self.unique_classes:
